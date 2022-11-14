@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>survey form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>CapacityBay Survey Form</h1>
+            <p>Thank you for the time to help us improve the platform</p>
+        </header>
+        <section>
+            <form class="form">
+
+                <label for="name" class="hold">Name</label>
+                <input type="text" id="Name" placeholder="Enter your name" class="grind">
+
+                <label for="Email" class="hold">Email</label>
+                <input type="text" id="name" placeholder="Enter your Email" class="grind">
+
+                <label for="age" class="hold">Age (optional)</label>
+                <input type="text" id="age" placeholder="Age" class="grind">
+
+                <label for="role" class="hold">Which option best describes your current role?</label>
+                <select name="role" id="dropdown" class="grind">
+                    <option>Select current role</option>
+                    <option value="student">Student</option>
+                    <option value="job">Full Time Job</option>
+                    <option value="full time">Full Time Learner</option>
+                    <option value="not to say">Prefer not to say</option>
+                    <option value="other">Other</option>
+                </select>
+                <label class="hold">Would you recommend CapacityBay to a friend?</label>
+                <label class="recom"><input name="recommend" value="definitely" type="radio" class="rel"
+                        checked />Definitely</label>
+                <label class="recom"><input name="recommend" value="maybe" type="radio" class="rel">Maybe</label>
+                <label class="recom"><input name="recommend" value="not-sure" type="radio" class="rel">Not sure</label>
+
+                <label for="question" class="hold">What is your favorite feature of CapacityBay?</label>
+                <select name="question" id="question" class="grind">
+                    <option value="option">Select an option</option>
+                    <option value="challenges">Challenges</option>
+                    <option value="projects">Projects</option>
+                    <option value="community">Community</option>
+                    <option value="source">Open Source</option>
+                </select>
+
+                <label for="improve" class="hold">What would you like to see improved in CapacityBay?</label>
+                <label for="frontend" class="recom"><input name="capacitybay" type="checkbox" class="rel">Front-end
+                    Projects</label>
+                <label class="recom"><input name="capacitybay" type="checkbox" class="rel">Back-end Projects</label>
+                <label class="recom"><input name="capacitybay" type="checkbox" class="rel">Data Visulization</label>
+                <label class="recom"><input type="checkbox" class="rel">Challenges</label>
+                <label class="recom"><input type="checkbox" class="rel">Open Source Community</label>
+                <label class="recom"><input type="checkbox" class="rel">Gitter help rooms</label>
+                <label class="recom"><input type="checkbox" class="rel">Videos</label>
+                <label class="recom"><input type="checkbox" class="rel">City Meetups</label>
+                <label for="" class="recom"><input type="checkbox" class="rel">Wiki</label>
+                <label for="" class="recom"><input type="checkbox" class="rel">Forum</label>
+                <label for="" class="recom"><input type="checkbox" class="rel">Additional Courses</label>
+
+
+                <label for="comment">Any comment or suggestions?</label>
+                <textarea id="comment" rows="5" placeholder="Enter your comment here..." required=""></textarea>
+                <br>
+                <button class="grind"><a href="mailto:capacitybay@gmail">Submit</a></button>
+
+            </form>
+        </section>
+    </div>
+</body>
+
+</html>
